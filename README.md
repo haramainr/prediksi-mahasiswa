@@ -1,72 +1,93 @@
-# 🎓 Prediksi Dropout Mahasiswa - Jaya Jaya Institut
+# Proyek Akhir: Prediksi Risiko Dropout Mahasiswa
 
 ## 📌 Business Understanding
 
-Jaya Jaya Institut merupakan institusi pendidikan yang memiliki permasalahan tingginya angka mahasiswa dropout. Hal ini dapat berdampak pada reputasi dan kualitas institusi.
+### Latar Belakang
 
-### 🎯 Tujuan Proyek
-Membangun sistem prediksi untuk mengidentifikasi mahasiswa yang berpotensi dropout sehingga dapat dilakukan tindakan preventif lebih awal.
+Jaya Jaya Institut merupakan institusi pendidikan yang telah menghasilkan banyak lulusan berkualitas. Namun, terdapat permasalahan tingginya jumlah mahasiswa yang tidak menyelesaikan pendidikan (dropout). Hal ini dapat berdampak pada reputasi institusi dan efektivitas sistem pendidikan.
 
----
+### Permasalahan Bisnis
 
-## 📊 Data Understanding
+* Tingginya angka dropout mahasiswa
+* Sulitnya mendeteksi mahasiswa yang berisiko dropout sejak dini
+* Kurangnya insight berbasis data untuk mendukung pengambilan keputusan
 
-Dataset yang digunakan berisi informasi terkait performa mahasiswa, termasuk data akademik dan demografis.
+### Cakupan Proyek
 
-### 🔍 Insight:
-- Tidak terdapat missing values pada dataset.
-- Distribusi status mahasiswa terdiri dari dropout, enrolled, dan graduate.
-- Admission grade dan umur memiliki pengaruh terhadap status mahasiswa.
-- Mahasiswa dengan nilai rendah cenderung memiliki risiko dropout lebih tinggi.
-
----
-
-## 🧹 Data Preparation
-
-Tahapan preprocessing yang dilakukan:
-- Encoding data kategorikal menjadi numerik
-- Pemisahan fitur dan target
-- Pembagian data training dan testing
-- Normalisasi data menggunakan StandardScaler
+* Analisis data performa mahasiswa
+* Pembuatan dashboard untuk monitoring performa
+* Pengembangan model machine learning untuk prediksi status mahasiswa
 
 ---
 
-## 🤖 Modeling
+## ⚙️ Persiapan
 
-Model yang digunakan:
-- Random Forest Classifier
+### Sumber Data
 
-Alasan pemilihan:
-- Cocok untuk data tabular
-- Mampu menangani kompleksitas data
-- Memiliki performa yang stabil
+Dataset dapat diakses melalui link berikut:
+👉 https://raw.githubusercontent.com/haramainr/prediksi-mahasiswa/refs/heads/main/data.csv
 
----
+### Setup Environment
 
-## 📈 Evaluation
-
-Model dievaluasi menggunakan:
-- Classification Report
-- Confusion Matrix
-- Accuracy Score
-
-### 📊 Hasil:
-Model mampu memprediksi status mahasiswa dengan performa yang cukup baik, meskipun masih terdapat beberapa kesalahan prediksi.
+```bash
+pip install -r requirements.txt
+```
 
 ---
 
-## 💡 Conclusion
+## 📊 Business Dashboard
 
-Model machine learning yang dibangun dapat digunakan untuk memprediksi kemungkinan mahasiswa mengalami dropout.
+Dashboard dibuat menggunakan Tableau untuk membantu memahami performa mahasiswa dan faktor yang mempengaruhi status mereka.
 
-Dengan adanya sistem ini, institusi dapat melakukan intervensi lebih awal untuk mengurangi angka dropout.
+👉 Link Dashboard:
+https://public.tableau.com/app/profile/haramain.rabbany/viz/StudentPerformanceDashboard_17745517906740/Dashboard1?publish=yes
+
+### Insight Utama:
+
+* Mahasiswa dengan performa rendah di semester pertama memiliki risiko dropout lebih tinggi
+* Jumlah mahasiswa yang lulus lebih tinggi dibandingkan dropout, namun dropout tetap signifikan
+* Usia saat masuk memiliki pengaruh terhadap performa akademik mahasiswa
 
 ---
 
-## 🚀 Deployment (Streamlit)
+## 🤖 Menjalankan Sistem Machine Learning
 
-Aplikasi dapat dijalankan menggunakan Streamlit.
+Prototype sistem dibuat menggunakan Streamlit.
 
-### ▶️ Cara Menjalankan:
+👉 Link Aplikasi:
+https://prediksi-mahasiswa-wrzknxdrdmakq7spc9vbgr.streamlit.app/
+
+### Cara Menjalankan Secara Lokal:
+
 ```bash
 streamlit run app.py
+```
+
+### Cara Menggunakan:
+
+1. Input data mahasiswa
+2. Klik tombol prediksi
+3. Sistem akan menampilkan status mahasiswa:
+
+   * Dropout
+   * Enrolled
+   * Graduate
+
+---
+
+## 📈 Conclusion
+
+Berdasarkan analisis data dan model yang dikembangkan, performa akademik mahasiswa terutama pada semester pertama memiliki pengaruh signifikan terhadap kemungkinan kelulusan. Selain itu, faktor usia juga menunjukkan adanya hubungan terhadap risiko dropout.
+
+Model machine learning yang dikembangkan mampu membantu dalam mengidentifikasi mahasiswa yang berpotensi dropout sehingga institusi dapat memberikan intervensi lebih awal.
+
+---
+
+## 🎯 Rekomendasi Action Items
+
+* Melakukan monitoring khusus terhadap mahasiswa dengan performa rendah di semester pertama
+* Memberikan program bimbingan atau mentoring untuk mahasiswa berisiko tinggi
+* Mengembangkan sistem early warning berbasis data untuk deteksi dropout
+* Mengoptimalkan proses evaluasi akademik untuk meningkatkan tingkat kelulusan
+
+---
