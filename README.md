@@ -121,8 +121,26 @@ Model machine learning dapat membantu mengidentifikasi mahasiswa berisiko dropou
 
 ---
 
-## 💡 Rekomendasi
+## 💡 Rekomendasi Action Items
 
-* Intervensi akademik untuk mahasiswa berisiko
-* Bantuan finansial bagi mahasiswa yang mengalami kesulitan
-* Monitoring performa secara berkala menggunakan dashboard
+Berdasarkan hasil analisis dan model yang telah dibuat, berikut beberapa rekomendasi yang dapat dilakukan oleh institusi:
+
+1. **Monitoring Akademik**
+   - Identifikasi mahasiswa dengan IPK rendah sejak semester pertama
+   - Berikan program mentoring atau bimbingan belajar tambahan
+
+2. **Intervensi Finansial**
+   - Prioritaskan bantuan kepada mahasiswa yang memiliki tunggakan pembayaran
+   - Perluas program beasiswa untuk mengurangi risiko dropout
+
+3. **Early Warning System**
+   - Gunakan model machine learning untuk mendeteksi mahasiswa berisiko sejak dini
+   - Integrasikan sistem ini ke dalam dashboard monitoring kampus
+
+4. **Pendekatan Personal**
+   - Lakukan pendekatan khusus pada kelompok mahasiswa dengan risiko tinggi
+   - Pertimbangkan faktor demografis seperti usia dan gender dalam intervensi
+
+5. **Evaluasi Berkala**
+   - Lakukan evaluasi performa mahasiswa secara rutin
+   - Update model secara berkala agar tetap akurat
