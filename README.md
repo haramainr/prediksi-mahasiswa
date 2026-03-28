@@ -190,26 +190,26 @@ Model ini dapat digunakan sebagai sistem **early warning** untuk membantu instit
 
 Berdasarkan hasil analisis data dan performa model machine learning, berikut rekomendasi yang dapat dilakukan oleh institusi:
 
-1. **Monitoring Mahasiswa Berisiko Tinggi**
+1. Monitoring Mahasiswa Berisiko Tinggi
 
    * Gunakan model machine learning untuk mengidentifikasi mahasiswa dengan probabilitas dropout tinggi sejak semester awal
 
-2. **Intervensi Akademik Dini**
+2. Intervensi Akademik Dini
 
    * Fokus pada mahasiswa dengan performa akademik rendah di semester pertama
    * Sediakan program mentoring dan bimbingan belajar tambahan
 
-3. **Dukungan Finansial**
+3. Dukungan Finansial
 
    * Prioritaskan bantuan kepada mahasiswa dengan status pembayaran tertunggak
    * Perluas akses beasiswa untuk menekan risiko dropout
 
-4. **Sistem Early Warning Terintegrasi**
+4. Sistem Early Warning Terintegrasi
 
    * Integrasikan model ke dalam dashboard monitoring untuk pemantauan real-time
    * Gunakan hasil prediksi sebagai dasar pengambilan keputusan
 
-5. **Evaluasi dan Pengembangan Model**
+5. Evaluasi dan Pengembangan Model
 
    * Lakukan retraining model secara berkala dengan data terbaru
    * Tingkatkan performa model terutama dalam mendeteksi mahasiswa dropout
