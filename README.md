@@ -160,7 +160,7 @@ https://prediksi-mahasiswa-wrzknxdrdmakq7spc9vbgr.streamlit.app/
 2. Klik tombol **Prediksi**
 3. Sistem akan menampilkan:
 
-   * Status prediksi (Dropout / Lulus)
+   * Status prediksi (Dropout / Graduate)
    * Tingkat keyakinan model
    * Interpretasi hasil
 
@@ -168,47 +168,48 @@ https://prediksi-mahasiswa-wrzknxdrdmakq7spc9vbgr.streamlit.app/
 
 ## 📌 Conclusion
 
-Berdasarkan hasil analisis dan pemodelan, ditemukan bahwa faktor akademik dan finansial memiliki pengaruh paling signifikan terhadap risiko dropout mahasiswa.
+Berdasarkan hasil pemodelan yang telah dilakukan, model machine learning mampu memprediksi status mahasiswa (Dropout dan Graduate) dengan akurasi sebesar **87%**.
 
-Mahasiswa dengan performa akademik rendah pada semester pertama, seperti IPK rendah dan jumlah mata kuliah lulus yang sedikit, memiliki kecenderungan lebih tinggi untuk mengalami dropout. Selain itu, faktor finansial seperti status pembayaran UKT juga menjadi indikator penting, di mana mahasiswa dengan tunggakan lebih berisiko tidak melanjutkan studi.
+Hasil evaluasi model menunjukkan:
 
-Model machine learning yang dibangun menunjukkan performa yang cukup baik dengan hasil sebagai berikut:
+* Precision dan recall pada kedua kelas sudah cukup baik
+* Recall untuk kelas Dropout sebesar **76%**, menunjukkan model cukup mampu mengidentifikasi mahasiswa yang berisiko dropout
+* Recall untuk kelas Graduate sebesar **95%**, menunjukkan model sangat baik dalam mengenali mahasiswa yang akan lulus
 
-* Accuracy: **87%**
-* Precision: **88%**
-* Recall: **87%**
+Insight utama yang diperoleh:
 
-Hal ini menunjukkan bahwa model mampu mengidentifikasi mahasiswa berisiko dropout dengan cukup akurat.
+* Performa akademik di semester pertama menjadi faktor paling berpengaruh terhadap kelulusan mahasiswa
+* Mahasiswa dengan tunggakan pembayaran memiliki risiko dropout lebih tinggi
+* Faktor akademik dan finansial merupakan indikator utama dalam menentukan status mahasiswa
 
-Dengan adanya model ini, institusi dapat menerapkan sistem **early warning** untuk mendeteksi mahasiswa berisiko sejak dini dan melakukan intervensi yang lebih tepat sasaran.
+Model ini dapat digunakan sebagai sistem **early warning** untuk membantu institusi pendidikan dalam melakukan intervensi lebih dini guna menekan angka dropout.
 
 ---
 
 ## 💡 Rekomendasi Action Items
 
-Berdasarkan hasil analisis dan model yang telah dibuat, berikut beberapa rekomendasi:
+Berdasarkan hasil analisis data dan performa model machine learning, berikut rekomendasi yang dapat dilakukan oleh institusi:
 
-1. **Monitoring Akademik**
+1. **Monitoring Mahasiswa Berisiko Tinggi**
 
-   * Identifikasi mahasiswa dengan IPK rendah sejak semester pertama
-   * Berikan program mentoring atau bimbingan tambahan
+   * Gunakan model machine learning untuk mengidentifikasi mahasiswa dengan probabilitas dropout tinggi sejak semester awal
 
-2. **Intervensi Finansial**
+2. **Intervensi Akademik Dini**
 
-   * Prioritaskan bantuan bagi mahasiswa dengan tunggakan pembayaran
-   * Perluas program beasiswa
+   * Fokus pada mahasiswa dengan performa akademik rendah di semester pertama
+   * Sediakan program mentoring dan bimbingan belajar tambahan
 
-3. **Early Warning System**
+3. **Dukungan Finansial**
 
-   * Implementasikan model machine learning sebagai sistem deteksi dini
-   * Integrasikan dengan dashboard monitoring
+   * Prioritaskan bantuan kepada mahasiswa dengan status pembayaran tertunggak
+   * Perluas akses beasiswa untuk menekan risiko dropout
 
-4. **Pendekatan Personal**
+4. **Sistem Early Warning Terintegrasi**
 
-   * Lakukan pendekatan khusus pada mahasiswa berisiko tinggi
-   * Pertimbangkan faktor demografis
+   * Integrasikan model ke dalam dashboard monitoring untuk pemantauan real-time
+   * Gunakan hasil prediksi sebagai dasar pengambilan keputusan
 
-5. **Evaluasi Berkala**
+5. **Evaluasi dan Pengembangan Model**
 
-   * Lakukan monitoring performa mahasiswa secara rutin
-   * Perbarui model secara berkala
+   * Lakukan retraining model secara berkala dengan data terbaru
+   * Tingkatkan performa model terutama dalam mendeteksi mahasiswa dropout
